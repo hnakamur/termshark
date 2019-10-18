@@ -17,3 +17,5 @@ require (
 	golang.org/x/sys v0.0.0-20190416152802-12500544f89f // indirect
 	gopkg.in/fsnotify.v1 v1.4.7
 )
+
+go 1.13

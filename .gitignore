@@ -1,1 +1,4 @@
 dist/
+
+# Never commit secret information
+.github_token

@@ -1,0 +1,25 @@
+# nfpm config file for termshark
+name: "termshark"
+arch: "amd64"
+platform: "linux"
+version: "${TERMSHARK_VERSION}"
+section: "default"
+priority: "extra"
+provides:
+- termshark
+maintainer: "Hiroaki Nakamura <hnakamur@gmail.com>"
+description: |
+  A terminal UI for tshark, inspired by Wireshark.
+vendor: "http://github.com/hnakamur/termshark"
+homepage: "http://github.com/gcla/termshark"
+license: "MIT"
+bindir: "/usr/bin"
+files:
+  ./termshark: "/usr/bin/termshark"
+overrides:
+  rpm:
+    depends:
+    - wireshark
+  deb:
+    depends:
+    - tshark
